@@ -435,18 +435,20 @@
         Ready to go lighter? Save the map offline, carry layers, and keep sunrise slots for the magic hours.
     </footer>
     <script>
-        const heroDiv = document.querySelector('.hero.mural > div');
+         const heroDiv = document.querySelector('.hero.mural > div');
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
 
-        observer.observe(heroDiv);
+  observer.observe(heroDiv);
 
+
+        
     </script>
 
 
